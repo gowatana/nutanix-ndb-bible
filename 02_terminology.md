@@ -61,7 +61,7 @@ Nutanix HCIでは、仮想化基盤のハイパーバイザとして ESXi が選
 NDB の管理サーバです。仮想アプライアンスです。Nutanix 製品としてはめずらしく、Prism Element / Central とは別の管理用 Web UI を提供します。
 
 ## NDB Database Agent
-NDB 管理する DB サーバにインストールされるエージェントです。
+NDB が管理する DB サーバにインストールされるエージェントです。
 
 ## Profiles
 NDB では、DB や DB サーバの構成をプロファイルで管理します。DB / DB サーバをプロビジョニングやクローン作成する際には、各種プロフィアルを指定することになります。
@@ -77,7 +77,7 @@ NDB で DB のクローンやバックアップ / リストアを実施するた
 ## Log Catch-up Operation
 NDB Server が、NDB で管理する DB サーバから、DB のトランザクション ログを定期的にキャッチアップします。NDB Time Machine での PIT リカバリなどで利用します。
 ## SLAs
-NDB の Time Machine を利用するうえでの、スナップショットの取得間隔やトランザクション ログの保持期限を設定する設定。
+NDB の Time Machine を利用するうえでの、スナップショットの取得間隔やトランザクション ログの保持期限を設定する設定です。
 
 ## NDB Drive
 Source Database Server VM に接続されたドライブで、NDB に転送する DB トランザクションログを一時的に格納します。
