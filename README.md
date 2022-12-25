@@ -10,3 +10,4 @@
 * [タイムマシン](/08_time-machine.md)
 
 > [時代は Nutanix NDB Advent Calendar 2022](https://adventar.org/calendars/8353)
+> ![無事終了](/images/NDB-Advent-Calendar-2022-End.png)
