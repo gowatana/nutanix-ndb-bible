@@ -1,5 +1,7 @@
 # Nutanix Database Service（NDB）の薄い本
 
+随時更新中
+
 * [NDB の概要](/01_overview.md)
 * [用語集](/02_terminology.md)
 * [管理対象の DBMS](/03_dbms.md)
