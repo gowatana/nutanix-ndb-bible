@@ -10,6 +10,9 @@
 * [NDB のツール](/06_utilities.md)
 * [NDB のネットワーク](/07_network.md)
 * [タイムマシン](/08_time-machine.md)
+* [NDB でのアップデート](/09_update.md)
+* [インテグレーション](/10_integration.md)
+
 
 > [時代は Nutanix NDB Advent Calendar 2022](https://adventar.org/calendars/8353)
 > 
