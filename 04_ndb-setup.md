@@ -2,6 +2,7 @@
 
 NDB の管理サーバとなる NDB Server のセットアップについて概要を説明します。
 
+
 ## NDB Server のセットアップの流れ
 
 NDB Server は、仮想アプライアンスとして提供されており、次のような流れでセットアップします。AHV と ESXi とで若干の違いがあります。
@@ -14,6 +15,12 @@ AHV 上でのセットアップ
 4. Web ブラウザからアクセスして admin パスワード設定と EULA への同意
 5. 「NDB へようこそ」ウィザードでのセットアップ
 
+> - [Blog] NDB Server をセットアップしてみる。前編： AHV での NDB Server 構築  
+>   https://blog.ntnx.jp/entry/2022/12/06/231052
+> - [Blog] NDB Server をセットアップしてみる。後編： NDB Server の初期設定  
+>   https://blog.ntnx.jp/entry/2022/12/06/231052
+
+
 ESXi 上でのセットアップ
 
 1. ``OVA ファイルのデプロイ``
@@ -21,6 +28,7 @@ ESXi 上でのセットアップ
 3. ``ゲスト OS でのネットワーク設定（era-server CLI を利用）``
 4. Web ブラウザからアクセスして admin パスワード設定と EULA への同意
 5. 「NDB へようこそ」ウィザードでのセットアップ
+
 
 ## 「NDB へようこそ」ウィザード
 

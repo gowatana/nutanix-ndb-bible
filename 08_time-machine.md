@@ -53,3 +53,20 @@ NBD では、2種類の DB リストアが可能です。
 - 時間を指定した DB のリストア、つまり PIT（Point-in-Time）でのリカバリ
 
 > DB の「ポイント イン タイム」でのリストアを実施する場合には、SLA は「継続的なログの保存期間」の日数が設定されたものを指定することで、ログをキャッチアップしておく必要があります。
+
+> - [Blog] NDB で DB を PIT リカバリしてみる。（Oracle）  
+>   https://blog.ntnx.jp/entry/2022/12/16/040309
+
+
+## DB のクローン
+
+NDB での DB クローンでも、タイムマシンを利用します。
+クローン処理では、DB と一緒に新規 DB サーバ VM を作成するか、DB を既存 DB サーバ VM に作成することになります。
+また、プリ / ポスト コマンドの実行機能を利用することで、データ マスキングなども実現できます。
+
+> - [Blog] NDB で Oracle Database をクローンしてみる。（Non-CDB）  
+>   https://blog.ntnx.jp/entry/2022/12/13/230617
+> - [Blog] NDB で 1台の DB サーバに 複数の Oracle CDB をクローンしてみる。  
+>   https://blog.ntnx.jp/entry/2022/12/18/234023
+> - [Blog] NDB の Oracle Database クローンでデータ マスキングしてみる。  
+>   https://blog.ntnx.jp/entry/2022/12/14/185250

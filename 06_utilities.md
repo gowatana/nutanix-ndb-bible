@@ -2,6 +2,7 @@
 
 NDB を運用するための主要なツールを紹介します。
 
+
 ## Prism Elemtnt
 
 Nutanix HCI においてNutanix クラスタや仮想マシンの管理ツールで、Web ブラウザから利用します。Prism Element を集中管理する「Prism Central」も存在しますが、NDB からは直接的に利用しません。
@@ -34,12 +35,22 @@ NDB には、Nutanix HCI とは別の REST API が用意されています。NDB
 NDB Web UI の各ウィザードには、「同等の API」ボタンが用意されていて、REST API を利用するスクリプトが自動生成されます。各種言語のスクリプトが表示されるので、DB 管理の自動化が容易になります。
 ![NDB API Equivalent](images/util-ndb-api-equivalent.png)
 
+> - [Blog] NDB で PostgreSQL DB をプロビジョニングしてみる。（REST API & curl 編）  
+>   https://blog.ntnx.jp/entry/2022/12/19/230611
+> - [Blog] NDB のプロファイル ID を REST API で取得してみる。   
+>   https://blog.ntnx.jp/entry/2022/12/21/020951
+> - [Blog] NDB で DB と DB サーバ VM を削除してみる。（REST API & curl 編）  
+>   https://blog.ntnx.jp/entry/2022/12/24/235034
+
 
 ## NDB CLI（era コマンド）
 
 NDB の DB 管理操作で利用できる CLI で、Web UI と同様の操作が可能です。
 NDB Server に SSH 接続して利用する CLI で、コマンドの名前は旧製品名である「era」のままです。
 NDB の Web UI からダウンロードしてローカルの Linux / macOS マシンで実行することも可能です。
+
+> - [Blog] NDB CLI を DB サーバから実行してみる。  
+>   https://blog.ntnx.jp/entry/2022/12/12/235825
 
 
 ## era-server CLI
