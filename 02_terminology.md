@@ -9,8 +9,12 @@ NDB に関連する用語を説明しておきます。
 ## Database
 普通にデータベースのことです。ただし、NDB の管理では、データベースと、それをホストするデータベース サーバ（の仮想マシン）を区別して扱います。
 
+![NDBのデータベース](assets\NDB-CDM\ndb-15.png)
+
 ## Database Server VM
 データベース管理システム（DBMS。PostgreSQL、Oracle Database、SQL Serverなど）をインストールした仮想マシンです。そして NDB にとっての DB サーバは、Nutanix HCI 上で起動されている必要があります。
+
+![NDBのDBサーバVM](assets\NDB-CDM\ndb-16.png)
 
 ## Greenfield Database / Greenfield Database Server VM
 「グリーン フィールド」とは新規構築する環境を指しており、NDB の機能でプロビジョニングした DB、DB サーバを指します。
@@ -51,6 +55,8 @@ Nutanix HCI のクラスタを管理する Web UI です。ハイパーバイザ
 ## Nutanix Volumes Block Storage
 Nutainx HCI の分散ストレージ（AOS Storage / Distributed Storage Fabric）から、iSCSI でブロック デバイスを提供する機能です。NDB では、DB サーバの DBMS、DB 構成ファイルの格納領域などとして利用します。
 
+![Prism から見た DB サーバ VM - VG](assets\NDB-CDM\ndb-17.png)
+
 ## vSphere（vCenter Server + ESXi）
 Nutanix HCIでは、仮想化基盤のハイパーバイザとして ESXi が選択できます。その場合は、管理サーバとして vCenter Server も必要になります。
 
@@ -73,6 +79,8 @@ NDB では、DB や DB サーバの構成をプロファイルで管理します
 
 ## Time Machine
 NDB で DB のクローンやバックアップ / リストアを実施するための機能で、DB サーバ VM のスナップショットや、DB からトランザクションログ取得や保持期間を管理する。NDB に DB を登録する際に、DB 単位で必ず作成することになる。
+
+![NDB UI でのタイムマシン](assets\NDB-CDM\ndb-36.png)
 
 ## Log Catch-up Operation
 NDB Server が、NDB で管理する DB サーバから、DB のトランザクション ログを定期的にキャッチアップします。NDB Time Machine での PIT リカバリなどで利用します。

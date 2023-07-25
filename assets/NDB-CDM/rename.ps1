@@ -1,0 +1,1 @@
+$i=0; ls | sort LastWriteTime | %{$i++; echo (mv $_.Name "ndb-$i.png")}
