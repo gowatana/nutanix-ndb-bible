@@ -10,7 +10,7 @@ NDB では、次の DBMS を管理できます。
 * MongoDB
 
 DBサーバは、DBMSソフトウェアとDBに分解でき、NDBでもDBサーバー仮想マシンとDBを分けて管理する事ができます。
-![DBMSとDBの関係](assets\NDB-CDM\ndb-7.png)
+![DBMSとDBの関係](assets/NDB-CDM/ndb-7.png)
 
 NDB で DB をプロビジョニングするには、もとにする DB サーバが必要となっており、基本的には次のような手順が必要です。
 
