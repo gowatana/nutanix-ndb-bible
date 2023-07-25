@@ -27,7 +27,7 @@ Nutanix NDB は、Nutanix HCI 上での DB サーバ仮想マシンを管理対�
 つまり、Nutanix の外部で稼働している DB サーバは物理 / 仮想マシンのいずれの場合も管理対象外であり、NDB で管理するためには何らかの方法で Nutanix HCI 上の仮想マシンとして移行する必要があります。
 また、NDB の管理サーバ（NDB Server）も、Nutanix HCI 上で稼働している必要があります。
 
-![NDB 注意点](assets\NDB-CDM\ndb-18.png)
+![NDB 注意点](assets/NDB-CDM/ndb-18.png)
 
 
 NDB の提供する機能では、おもに Nutanix HCI に関係する下記のコンポーネントが利用されます。（実際には、下記以外の機能も利用されます）
@@ -38,4 +38,4 @@ NDB の提供する機能では、おもに Nutanix HCI に関係する下記の
 
 ちなみに NDB Server は、最近の Nutanix 製品にしてはめずらしく直接的に Prism Central に接続しません。
 
-![NDB の Nutanix 活用イメージ](assets\NDB-CDM\ndb-13.png)
+![NDB の Nutanix 活用イメージ](assets/NDB-CDM/ndb-13.png)
